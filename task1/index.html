@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Doctor Appointment Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="photo">
+				<img src="imgs/doctor.webp" alt="Doctor photo">
+			</div>
+
+			<div class="card">
+				<h1>Doctor Appointment Form</h1>
+				<hr class="divider">
+
+				<form>
+					<div class="row">
+						<label for="date">Appointment Date</label>
+						<input id="date" name="date" type="date">
+					</div>
+
+					<div class="row">
+						<label for="time">Appointment Time</label>
+						<input id="time" name="time" type="time">
+					</div>
+
+					<div class="row name-row">
+						<label>Name</label>
+						<input type="text" name="first" placeholder="First">
+						<input type="text" name="last" placeholder="Last">
+					</div>
+
+					<div class="row">
+						<label>Gender</label>
+						<div class="gender-row">
+							<label><input type="radio" name="gender" value="male"> Male</label>
+							<label><input type="radio" name="gender" value="female"> Female</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<label for="phone">Phone</label>
+						<input id="phone" name="phone" type="tel" placeholder="####">
+					</div>
+
+					<div class="row">
+						<label>Address</label>
+						<input type="text" name="city" placeholder="city" style="width:60%;margin-right:8px">
+						<input type="text" name="state" placeholder="state" style="width:36%">
+					</div>
+
+					<div class="row">
+						<label>Your Query</label>
+						<textarea name="query" placeholder="Type your query here"></textarea>
+					</div>
+
+					<div class="row">
+						<label>Appointment Type</label>
+						<div class="checkboxes">
+							<label><input type="checkbox" name="type" value="cervix"> Cervix checkup</label>
+							<label><input type="checkbox" name="type" value="heart"> Heart checkup</label>
+							<label><input type="checkbox" name="type" value="eye"> Eye check-up</label>
+							<label><input type="checkbox" name="type" value="hearing"> Hearing Test</label>
+						</div>
+					</div>
+
+					<div class="submit-row">
+						<button type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
